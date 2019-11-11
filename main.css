@@ -73,8 +73,8 @@ ul {
 
 .anchor {
   display: block;
-  height: 70px; /*same height as header*/
-  margin-top: -70px; /*same height as header*/
+  height: 70px;
+  margin-top: -70px;
   visibility: hidden;
 }
 
@@ -87,6 +87,7 @@ ul {
   background-position: center top;
 }
 
+/*container that holds the title and subtitle of banner*/
 .inner-container {
   position: absolute;
   color: #fff;
@@ -139,18 +140,11 @@ ul {
   height: 270px;
   border-radius: 400px;
   margin-top: -10px;
-  /*
-  */
 }
 
 .pop {
   width: 45%;
   margin-top: -20px;
- /*
-   width: 55%;
-  padding-left: 400px;
-  padding-top: 50px;
-  margin-right: 200px; width: 70%;*/
 }
 
 .pop p {
@@ -158,7 +152,6 @@ ul {
   font-weight: 0%;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.8;
-
 }
 
 .pop a {
@@ -166,6 +159,7 @@ ul {
   color: #a33d60;
 }
 
+/*changes the about section from a row to a column on devices that have a width of 600px or less*/
 @media screen and (max-width: 600px) {
   .welcome {
     flex-flow: column;
@@ -173,12 +167,37 @@ ul {
     margin-top: 1px;
   }
 
-  img {
-   width: 290px;
-   height: 290px;
+  .welcome img {
+   width: 270px;
+   height: 270px;
    border-radius: 400px;
   }
 
+}
+
+/* Container for flexboxes */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 0;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+
+/* Create two columns */
+.column {
+  flex: 50%;
+  padding: 13px; 5px; 0 5px;
+  height: 400px;
+  overflow: scroll;
+}
+
+/*changes rows into single column if screen is bigger than 600px or less*/
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 .whitecolumn {
@@ -194,30 +213,6 @@ ul {
   border-left: 5px solid #A71743;
   font-family: 'Titillium Web', sans-serif;
   font-size: 14px;
-}
-
-/* Container for flexboxes */
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 0;
-  flex-shrink: 0;
-}
-
-/* Create two columns */
-.column {
-  flex: 50%;
-  padding: 13px; 5px; 0 5px;
-  height: 300px;
-  overflow: scroll;
-}
-
-/*changes rows into single column if screen is bigger than 600px or less*/
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
 }
 
 
@@ -242,18 +237,31 @@ footer {
   padding: 2.5em;
   font-family: Lato, serif;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   margin-top: auto;
 }
 
 .social {
-  word-spacing: 25px;
+  word-spacing: 15px;
 }
 
 footer a {
   color: white;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.social li {
+  padding-left: 5px;
+  display: inline-block;
 }
 
 /* navigation style */
