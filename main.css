@@ -132,9 +132,7 @@ ul {
   flex-flow: row wrap;
   justify-content: space-around;
   margin-left: 70px;
-  margin-top: 160px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  margin-top: 220px;
 }
 
 .welcome img {
@@ -154,6 +152,7 @@ ul {
   font-weight: 0%;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.8;
+
 }
 
 .pop a {
@@ -161,19 +160,30 @@ ul {
   color: #a33d60;
 }
 
-/*changes the about section from a row to a column on devices that have a width of 600px or less*/
 @media screen and (max-width: 600px) {
+  .about {
+  width: 100%;
+  position: relative;
+  height: 550px;
+  background: #fff;
+  overflow: scroll;
+}
+
   .welcome {
-    flex-flow: column;
-    margin-left: 50px;
-    margin-top: 1px;
+    display: flex;
+     flex-flow: column;
+    justify-content: center;
   }
 
-  .welcome img {
-   width: 270px;
-   height: 270px;
-   border-radius: 400px;
+   .welcome img {
+     display: none;
   }
+
+  .pop {
+  width: 95%;
+  margin-top: -20px;
+}
+
 
 }
 
