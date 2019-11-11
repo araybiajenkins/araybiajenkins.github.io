@@ -83,7 +83,7 @@ ul {
   background-size: cover;
   background-image: url(https://i.imgur.com/p0ApvEp.png);
   width: 100%;
-  height: 660px;
+  height: 800px;
   background-position: center top;
 }
 
@@ -133,6 +133,8 @@ ul {
   justify-content: space-around;
   margin-left: 70px;
   margin-top: 160px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .welcome img {
@@ -190,7 +192,8 @@ ul {
   flex: 50%;
   padding: 13px; 5px; 0 5px;
   height: 400px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /*changes rows into single column if screen is bigger than 600px or less*/
