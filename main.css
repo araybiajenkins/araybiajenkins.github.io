@@ -126,7 +126,7 @@ ul {
     background-color: #A7224B;
     background-size: cover;
     min-height: 400px;
-    height: 1000px;
+    height: 1300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,11 +196,11 @@ ul {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 20px;
   margin-top: 150px;
 }
 
-   .welcome img {
+.welcome img {
      display: none;
   }
 
