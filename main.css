@@ -108,6 +108,32 @@ ul {
 
 }
 
+@media screen and (max-width: 600px) {
+  .banner {
+    background-color: #A7224B;
+    background-size: cover;
+    min-height: 400px;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .banner {
+    background-color: #A7224B;
+    background-size: cover;
+    min-height: 400px;
+    height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}
+
 .main {
   width: 100%;
   position: relative;
@@ -166,11 +192,13 @@ ul {
   overflow: scroll;
 }
 
-  .welcome {
-    display: flex;
-     flex-flow: column;
-    justify-content: center;
-  }
+.welcome {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 50px;
+  margin-top: 150px;
+}
 
    .welcome img {
      display: none;
