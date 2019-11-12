@@ -231,11 +231,16 @@ ul {
   overflow-x: hidden;
 }
 
-/*changes rows into single column if screen is bigger than 600px or less*/
+/*changes rows into single column if screen is 600px or less*/
 @media screen and (max-width: 600px) {
   .row {
     flex-direction: column;
   }
+
+  .column {
+height: 500px;
+}
+
 }
 
 .whitecolumn {
