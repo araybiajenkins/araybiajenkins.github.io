@@ -79,7 +79,7 @@ ul {
 }
 
 .banner {
-  background-image: url(https://i.imgur.com/cpF8aai.png);
+  background-image: url(https://i.imgur.com/upRAUeN.png);
   background-size: cover;
   min-height: 400px;
   height: 800px;
@@ -110,7 +110,7 @@ ul {
 
 @media screen and (max-width: 600px) {
   .banner {
-    background-image: url(https://i.imgur.com/cpF8aai.png);
+    background-image: url(https://i.imgur.com/upRAUeN.png);
     background-size: cover;
     min-height: 400px;
     height: 660px;
@@ -123,7 +123,7 @@ ul {
 
 @media screen and (min-width: 2000px) {
   .banner {
-    background-image: url(https://i.imgur.com/cpF8aai.png);
+    background-image: url(https://i.imgur.com/upRAUeN.png);
     background-size: cover;
     min-height: 400px;
     height: 950px;
@@ -237,7 +237,11 @@ ul {
   }
 
   .column {
-    height: 600px;
+    height: 500px;
+  }
+
+  .problem {
+    height: 650px;
   }
 
 }
