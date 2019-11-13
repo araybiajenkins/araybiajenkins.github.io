@@ -79,7 +79,7 @@ ul {
 }
 
 .banner {
-  background-image: url(https://i.imgur.com/upRAUeN.png);
+  background-image: url(https://i.imgur.com/bblOosM.png);
   background-size: cover;
   min-height: 400px;
   height: 800px;
@@ -110,7 +110,7 @@ ul {
 
 @media screen and (max-width: 600px) {
   .banner {
-    background-image: url(https://i.imgur.com/upRAUeN.png);
+    background-image: url(https://i.imgur.com/bblOosM.png);
     background-size: cover;
     min-height: 400px;
     height: 660px;
@@ -123,7 +123,7 @@ ul {
 
 @media screen and (min-width: 2000px) {
   .banner {
-    background-image: url(https://i.imgur.com/upRAUeN.png);
+    background-image: url(https://i.imgur.com/cpF8aai.png);
     background-size: cover;
     min-height: 400px;
     height: 950px;
@@ -187,7 +187,7 @@ ul {
   .about {
   width: 100%;
   position: relative;
-  height: 550px;
+  height: 555px;
   background: #fff;
   overflow: scroll;
 }
@@ -230,22 +230,6 @@ ul {
   overflow-x: hidden;
 }
 
-/*changes rows into single column if screen is 600px or less*/
-@media screen and (max-width: 600px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .column {
-    height: 500px;
-  }
-
-  .problem {
-    height: 650px;
-  }
-
-}
-
 .whitecolumn {
   background-color: #fff;
   /*color: #A71743;*/
@@ -261,6 +245,21 @@ ul {
   font-size: 14px;
 }
 
+/*changes rows into single column if screen is 600px or less*/
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .column {
+    height: 500px;
+  }
+
+  .problem {
+    height: 650px;
+  }
+
+}
 
 .projects {
   width: 100%;
